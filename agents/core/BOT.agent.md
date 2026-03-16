@@ -24,3 +24,4 @@ description: Interface conversationnelle générale, oriente les demandes simple
 - Résumé court
 - Actions proposées
 - Étape suivante claire
+- Actions exécutable

@@ -13,16 +13,31 @@ Ce dépôt fournit une base **stable à long terme** pour :
 
 ## Architecture
 
-- `master-orchestrator.agent.md` : routeur principal et coordination multi-agents.
-- `unified-essential.agent.md` : agent polyvalent (fallback opérationnel).
-- Agents spécialisés : analytics, legal, marketing, secrets, SaaS, outils.
-- `schema-systeme.agent.md` : vue conceptuelle globale.
-- `example-app.py` : exemple concret de point de départ utilisable partout.
+- `agents/core/` : orchestrateur + agents centraux.
+- `agents/specialized/` : agents métiers (analytics, legal, marketing, secret).
+- `agents/saas/` : agents orientés architecture SaaS.
+- `agents/tools/` : agents opérationnels/outils.
+- `architecture/` : schéma système global.
+- `examples/` : point de départ utilisable partout.
+- `docs/` : gouvernance, opérations, changelog.
+
+## Arborescence
+
+`README.md`
+`agents/core/*.agent.md`
+`agents/specialized/*.agent.md`
+`agents/saas/*.agent.md`
+`agents/tools/*.agent.md`
+`architecture/schema-systeme.agent.md`
+`examples/example-app.py`
+`docs/AGENTS.md`
+`docs/OPERATIONS.md`
+`docs/CHANGELOG.md`
 
 ## Installation (VS Code / Copilot)
 
 1. Clone ce dépôt.
-2. Copie les fichiers `*.agent.md` dans ton dossier de prompts utilisateur VS Code.
+2. Copie tous les fichiers `*.agent.md` depuis `agents/**` et `architecture/` dans ton dossier de prompts utilisateur VS Code.
 3. Redémarre VS Code.
 4. Vérifie que les agents apparaissent dans la liste des agents custom.
 
@@ -46,14 +61,14 @@ Approche recommandée :
 2. Le **Master Orchestrator** choisit le bon agent.
 3. Résultat normalisé renvoyé (plan, actions, risques, next steps).
 
-Tu peux utiliser `example-app.py` comme socle pour ton routeur local.
+Tu peux utiliser `examples/example-app.py` comme socle pour ton routeur local.
 
 ## Durabilité long terme
 
 - Convention de nommage stricte des agents.
-- Documentation d'exploitation dans `OPERATIONS.md`.
-- Gouvernance et standards dans `AGENTS.md`.
-- Versionnement via changelog (`CHANGELOG.md`).
+- Documentation d'exploitation dans `docs/OPERATIONS.md`.
+- Gouvernance et standards dans `docs/AGENTS.md`.
+- Versionnement via changelog (`docs/CHANGELOG.md`).
 
 ## Licence
 
