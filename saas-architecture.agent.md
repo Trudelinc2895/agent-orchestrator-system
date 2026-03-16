@@ -54,5 +54,4 @@ Vous êtes un expert en architecture SaaS avec une connaissance approfondie des 
 
 ### Recommandations
 - Trajectoire : MVP monolithique → modularisation → extraction ciblée.
-- Stack conseillée : Next.js, PostgreSQL, Redis, Clerk/Auth0, Stripe, S3, PostHog, Sentry, Vercel/Railway.</content>
-<parameter name="filePath">c:\Users\Alienware\AppData\Roaming\Code - Insiders\User\prompts\saas-architecture.agent.md
+- Stack conseillée : Next.js, PostgreSQL, Redis, Clerk/Auth0, Stripe, S3, PostHog, Sentry, Vercel/Railway.

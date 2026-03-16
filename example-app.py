@@ -1,38 +1,69 @@
-# Exemple d'App Personnelle pour Contrôler le Système d'Agents
+"""Point de départ universel pour piloter ton système d'agents.
 
-"""
-Cette app simple démontre comment utiliser le système d'agents via des prompts.
-Elle simule l'invocation du Master Orchestrator Agent pour des tâches complexes.
-
-Dans VS Code avec Copilot, vous pouvez invoquer les agents directement :
-- @Master Orchestrator Agent : Pour coordonner des tâches multi-domaines.
-- @Agent Secret : Pour gérer des secrets sécurisés.
-- @Unified Essential Agent : Pour des tâches polyvalentes.
-
-Exemple d'utilisation :
-1. Ouvrez une conversation Copilot.
-2. Tapez : "@Master Orchestrator Agent Planifie un projet SaaS avec intégration Stripe."
-3. L'agent analysera, priorisera, et assignera aux sous-agents appropriés.
-
-Cette app peut être étendue pour intégrer des APIs ou des automatisations externes.
+Usage :
+    python example-app.py "Créer une roadmap SaaS avec priorités"
 """
 
-def simulate_orchestrator_request(request):
-    """
-    Simule une requête au Master Orchestrator.
-    En réalité, cela serait fait via Copilot ou une API.
-    """
-    print(f"Requête reçue : {request}")
-    print("Analyse en cours...")
-    print("Priorisation avec matrice Eisenhower...")
-    print("Assignation aux agents : Agent SaaS, Agent Secret, Unified Essential")
-    print("Exécution : Conception architecture, gestion secrets, automatisation.")
-    print("Résultat : Projet planifié avec succès.")
+from dataclasses import dataclass
+import sys
+
+
+@dataclass
+class AgentDecision:
+    agent: str
+    reason: str
+
+
+def route_intent(intent: str) -> AgentDecision:
+    text = intent.lower()
+
+    if any(
+        k in text for k in ["secret", "token", "api key", "mot de passe"]
+    ):
+        return AgentDecision(
+            "@Agent Secret",
+            "Demande liée aux secrets/sécurité.",
+        )
+
+    if any(
+        k in text for k in ["saas", "tenant", "architecture", "scalabilité"]
+    ):
+        return AgentDecision("@SaaS", "Demande liée à l'architecture SaaS.")
+
+    if any(k in text for k in ["marketing", "acquisition", "conversion"]):
+        return AgentDecision(
+            "@Agent Marketing",
+            "Demande marketing/monétisation.",
+        )
+
+    return AgentDecision(
+        "@Master Orchestrator Agent",
+        "Demande multi-domaine ou générale, routée vers l'orchestrateur.",
+    )
+
+
+def build_prompt(intent: str) -> str:
+    decision = route_intent(intent)
+    return (
+        f"{decision.agent} {intent}\n\n"
+        f"[Raison de routage: {decision.reason}]\n"
+        "Réponds avec: Résumé, Plan d'action, Risques, Prochaine étape."
+    )
+
+
+def main() -> None:
+    intent = " ".join(sys.argv[1:]).strip() or (
+        "Planifie mon prochain sprint projet IA maison."
+    )
+    prompt = build_prompt(intent)
+
+    print("=== Prompt prêt à coller dans Copilot ===")
+    print(prompt)
+    print(
+        "\nAstuce: ce fichier peut être copié dans n'importe quel "
+        "projet comme routeur local minimal."
+    )
+
 
 if __name__ == "__main__":
-    # Exemple d'utilisation
-    request = "Créer une app SaaS avec paiement Stripe et analyse des données."
-    simulate_orchestrator_request(request)
-
-    print("\nPour une utilisation réelle, invoquez les agents dans Copilot.")
-    print("Repo : https://github.com/Trudelinc2895/agent-orchestrator-system")
+    main()
