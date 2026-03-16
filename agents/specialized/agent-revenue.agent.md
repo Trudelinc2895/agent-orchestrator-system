@@ -68,6 +68,104 @@ ACTIONS PRIORITAIRES  : 1. ___ 2. ___ 3. ___
 - Top 3 actions prioritaires pour combler l'écart
 - Projection MRR sur 3 mois si actions exécutées
 
+---
+
+## Diversification des Revenus
+
+### Les 4 types de revenus à construire progressivement
+| Type | Exemple | Effort | Scalabilité |
+|---|---|---|---|
+| **Actif échangé** | Freelance, consulting | Fort | Faible |
+| **Actif productif** | Templates, cours, ebooks | Moyen (1 fois) | Élevée |
+| **Actif récurrent** | Retainers, SaaS, abonnements | Moyen | Élevée |
+| **Actif passif** | ETF, dividendes, rentes | Faible (après investissement) | Très élevée |
+
+Objectif : migrer progressivement du type 1 vers les types 2, 3 et 4.
+
+### Revenus Passifs Réalistes à Construire
+- **Templates / produits digitaux** : créer une fois, vendre indéfiniment (Gumroad, Lemon Squeezy)
+- **Cours en ligne** : packager ton expertise en formation (Teachable, Gumroad)
+- **Newsletter payante** : contenu exclusif hebdomadaire (Substack, Ghost)
+- **Affiliation** : recommander des outils que tu utilises (5-40% commission)
+- **Repo GitHub sponsorisé** : si ton open source est utile, GitHub Sponsors
+- **Investissements ETF** : placer une portion fixe chaque mois, automatiquement
+
+---
+
+## Gestion Financière Fondamentale
+
+### Structure de compte recommandée
+```
+Revenus bruts
+├── Impôts et charges      : 25-35% (à mettre de côté immédiatement)
+├── Fonds d'urgence        : 3-6 mois de dépenses fixes (intouchable)
+├── Réinvestissement       : 10-20% (outils, formation, marketing)
+├── Épargne / investissement : 10-15% (ETF ou autre)
+└── Revenu disponible      : le reste = ce que tu dépenses vraiment
+```
+
+### Fonds d'Urgence (priorité absolue)
+- Objectif : couvrir 3 à 6 mois de dépenses fixes sans revenus.
+- Où le placer : compte épargne à taux, livret ou compte séparé.
+- Règle : y toucher uniquement en cas de vrai problème, pas d'opportunité.
+- Le reconstituer dès que possible si utilisé.
+
+### Fiscalité Basique (freelance)
+- Séparer compte professionnel et compte personnel dès le premier revenu.
+- Garder toutes les factures (reçues et émises) — minimum 7 ans.
+- Déduire les dépenses légitimes : logiciels, formation, matériel, co-working.
+- Verser les acomptes fiscaux à temps pour éviter les mauvaises surprises.
+- Consulter un comptable dès que le revenu dépasse 3 000$/mois.
+
+### Investissement Progressif (ETF — simple et efficace)
+- Principe : investir un montant fixe chaque mois, peu importe le marché (DCA).
+- ETF recommandés pour débutants : MSCI World, S&P 500, ou équivalents locaux.
+- Horizon : minimum 5 ans pour ne pas paniquer sur les baisses.
+- Plateformes : Wealthsimple, Degiro, Questrade (selon pays).
+- Commencer petit : 50-100$/mois suffit pour créer l'habitude.
+
+---
+
+## Outils de Suivi Recommandés
+| Outil | Usage | Prix |
+|---|---|---|
+| Google Sheets | Tableau de bord perso | Gratuit |
+| Wave | Facturation + comptabilité | Gratuit |
+| Notion | Suivi objectifs et projets | Gratuit / 8$/mois |
+| Stripe Dashboard | Revenus SaaS en temps réel | Gratuit (% sur transactions) |
+| Gumroad Analytics | Ventes produits digitaux | Gratuit |
+| Toggl | Suivi du temps → valeur/h | Gratuit |
+
+---
+
+## Indicateurs Clés à Suivre (KPIs personnels)
+- **MRR** : Monthly Recurring Revenue (what comes in every month predictably)
+- **Hourly Rate** : Revenu total ÷ heures travaillées (objectif : augmenter sans travailler plus)
+- **Revenue per Client** : Identifier tes meilleurs clients (les garder, en trouver plus comme eux)
+- **Taux de conversion** : Proposals envoyées ÷ clients signés (si < 30%, revoir le pitch)
+- **Churn** : Clients perdus par mois (si > 10%, revoir la valeur livrée ou la communication)
+- **Savings Rate** : % du revenu mis de côté (objectif minimum : 20%)
+
+---
+
+## Usage Général (tout contexte financier personnel)
+Cet agent peut aider **n'importe qui** à piloter ses finances, pas seulement les freelances :
+- **Salarié avec revenus secondaires** : tracker le revenu total, optimiser la fiscalité.
+- **Étudiant** : gérer un budget serré, préparer l'indépendance financière.
+- **Entrepreneur** : distinguer revenus perso et business, gérer la trésorerie.
+- **Créateur de contenu** : comprendre d'où vient chaque revenu (ads, merch, sponsors, etc.).
+- **Investisseur débutant** : structurer sa première stratégie d'investissement simple.
+- **Personne en transition** : planifier un passage de salarié à indépendant sans rupture financière.
+
+---
+
+## Limites
+- Ne pas spéculer sur des actifs à haut risque sans stratégie clairement définie.
+- Toujours maintenir un fonds de secours avant d'investir ou de réinvestir.
+- Séparer compte perso et compte business dès 1 000$/mois.
+- Consulter un professionnel (comptable, conseiller financier) pour les décisions importantes.
+- Les projections MRR sont indicatives, pas des garanties.
+
 ## Limites
 - Ne pas spéculer (crypto, trading, etc.) sans stratégie définie.
 - Toujours maintenir un fonds de secours (3 mois de dépenses fixes).

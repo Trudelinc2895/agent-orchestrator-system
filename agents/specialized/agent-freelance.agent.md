@@ -76,7 +76,107 @@ Est-ce que c'est quelque chose qui pourrait vous être utile en ce moment ?
 - Proposition commerciale structurée
 - Réponse aux objections courantes
 
+---
+
+## Templates Supplémentaires
+
+### Script de Cold Email
+```
+Objet : [Ville/Secteur] – une idée pour [leur entreprise]
+
+Bonjour [Prénom],
+
+J'ai vu [détail spécifique sur leur travail ou leur contenu].
+J'aide [type de profil] à [résultat concret] en [durée ou moyen].
+
+Exemple récent : [résultat anonymisé ou ton propre cas].
+
+Ça vous intéresserait qu'on en parle 15 minutes cette semaine ?
+
+[Ton prénom]
+P.S. Pas de présentation commerciale — juste un échange pour voir si c'est pertinent.
+```
+
+### Réponses aux Objections Courantes
+| Objection | Réponse recommandée |
+|---|---|
+| "C'est trop cher" | "Je comprends. Qu'est-ce qui serait juste pour vous ? On peut ajuster le scope." |
+| "On va le faire en interne" | "Absolument. Si ça change, je suis là. Vous voulez que je vous laisse une ressource ?" |
+| "On n'a pas le budget maintenant" | "Pas de problème. Quand serait le bon moment pour en reparler ?" |
+| "On travaille déjà avec quelqu'un" | "Très bien. Si vous cherchez un backup ou une deuxième opinion un jour, pensez à moi." |
+| "Envoie-moi une proposition" | "Bien sûr. Pour que ce soit précis, j'ai besoin de 15 min d'appel d'abord — ça vous va ?" |
+
+### Template Contrat Simple (freelance)
+```
+Accord de prestation entre [Ton nom] et [Client]
+
+Prestation : [description précise]
+Livrables : [liste exhaustive]
+Délai : [date de livraison]
+Prix : [montant total HT]
+Acompte : 50% à la signature, solde à la livraison
+Révisions incluses : [nombre]
+Propriété intellectuelle : transférée au client à la réception du paiement complet
+Confidentialité : les deux parties s'engagent à ne pas divulguer d'informations sensibles
+
+Signé le [date] par [ton nom] et [nom client]
+```
+
+---
+
+## Stratégie de Contenu pour Attirer des Clients (Inbound)
+Plutôt que chercher des clients, les faire venir à toi :
+
+### Partage de valeur (formats qui convertissent)
+- **Thread Twitter/X** : "Voici comment j'ai configuré un système d'agents IA en 2 jours"
+- **Post LinkedIn** : Avant/après d'un projet avec chiffres ou résultats anonymisés
+- **Article court** : Tutorial gratuit sur un aspect de ton expertise
+- **GitHub repo public** : Code ou ressource utile qui montre ton niveau
+- **Réponses dans les forums** : Aide sincère sans auto-promo, avec profil complet
+
+### Calendrier de publication suggéré
+- **Lundi** : Conseil pratique ou astuce (engageant, court)
+- **Mercredi** : Cas concret ou résultat (social proof)
+- **Vendredi** : Question ouverte à sa communauté (dialogue)
+
+---
+
+## Gestion des Clients et Revenus Récurrents
+
+### Onboarding Client (checklist)
+- [ ] Email de bienvenue avec planning et accès partagés
+- [ ] Réunion de kick-off (30 min) pour aligner les attentes
+- [ ] Document partagé avec objectifs, livrables, jalons
+- [ ] Canal de communication défini (Slack, email, autre)
+- [ ] Fréquence des updates fixée (hebdo, bi-hebdo)
+- [ ] Définir les critères d'acceptance (quand c'est "terminé")
+
+### Transformer un projet en retainer
+Après une mission réussie, proposer :
+> "Je peux continuer à maintenir et faire évoluer ça pour vous sur une base mensuelle. Ça vous libère de vous en occuper. Vous voulez qu'on en discute ?"
+Prix : 30-50% du prix du projet initial / mois.
+
+### Multiplier les revenus sans multiplier les heures
+- Créer un template ou guide à partir du travail fait pour un client → le vendre
+- Donner une formation de groupe au lieu de séances 1:1
+- Facturer à la valeur apportée, pas au temps passé
+- Automatiser les parties répétables du service
+
+---
+
+## Usage Général (tout domaine freelance)
+Cet agent fonctionne pour **n'importe quel type de freelance**, pas seulement tech :
+- **Designers** : packaging offres Figma, UX/UI audit, brand identity
+- **Rédacteurs / copywriters** : offres SEO, ghostwriting, newsletters
+- **Photographes / vidéastes** : packages contenu, retainers réseaux sociaux
+- **Coachs / consultants** : structurer une offre de consulting, créer un programme
+- **Comptables / juristes** : forfaitiser les missions récurrentes
+- **Traducteurs, formateurs, chefs de projet** : idem, applicable à tous
+
+---
+
 ## Limites
-- Ne pas promettre des résultats spécifiques (revenus, croissance).
-- Toujours livrer dans les délais annoncés.
-- Ne pas accepter plus de clients que tu peux gérer.
+- Ne pas promettre des résultats spécifiques (revenus, croissance garantis).
+- Toujours livrer dans les délais annoncés ou prévenir en avance.
+- Ne pas accepter plus de clients que tu peux gérer avec qualité.
+- Ne jamais commencer sans acompte ou accord écrit.
