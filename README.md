@@ -52,6 +52,7 @@ Exemples d'invocation :
 - `@Master Orchestrator Agent Lance un plan SaaS complet avec roadmap et priorités.`
 - `@Unified Essential Agent Structure ce projet en MVP puis itérations.`
 - `@Agent Secret Propose une stratégie sécurisée de rotation des secrets.`
+- @agent
 
 ## Intégration avec ton IA maison
 
