@@ -18,6 +18,51 @@ def route_intent(intent: str) -> AgentDecision:
     text = intent.lower()
 
     if any(
+        k in text
+        for k in [
+            "deploy",
+            "ci/cd",
+            "production",
+            "incident",
+            "observabilité",
+        ]
+    ):
+        return AgentDecision(
+            "@Agent DevOps",
+            "Demande liée à la production, au déploiement ou à la fiabilité.",
+        )
+
+    if any(
+        k in text
+        for k in [
+            "abonnement",
+            "billing",
+            "facturation",
+            "refund",
+            "dunning",
+        ]
+    ):
+        return AgentDecision(
+            "@Agent Billing Ops",
+            "Demande liée aux opérations de facturation et abonnements.",
+        )
+
+    if any(
+        k in text
+        for k in [
+            "onboarding",
+            "support",
+            "rétention",
+            "churn",
+            "csat",
+        ]
+    ):
+        return AgentDecision(
+            "@Agent Customer Success",
+            "Demande liée à l'adoption et à la réussite client.",
+        )
+
+    if any(
         k in text for k in ["secret", "token", "api key", "mot de passe"]
     ):
         return AgentDecision(

@@ -2,11 +2,55 @@
 .env
 .env.*
 *.env
+.envrc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 secrets/
 *.key
 *.pem
 *.p12
 *.pfx
+.venv/
+venv/
+.venv
+.ps1
+.bat
+.pgp
+.gpg
+.ssh/
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+tokens/
+API
+API/
+API_KEYS/
+credentials/
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+*.ovpn
+*.mobileconfig
+
+# Credentials fichiers explicites
+.npmrc
+.pypirc
+.netrc
+*.tfvars
+*.tfvars.json
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Secrets scanners / reports sensibles
+.secrets.baseline
+*.sarif
 
 # Dépendances
 node_modules/
@@ -14,6 +58,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.venv
 
 # OS
 .DS_Store
@@ -22,6 +67,8 @@ desktop.ini
 
 # Éditeurs
 .vscode/settings.json
+.idea/
+*.code-workspace
 *.swp
 *.swo
 

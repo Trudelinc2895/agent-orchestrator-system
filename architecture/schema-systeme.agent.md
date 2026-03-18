@@ -7,6 +7,11 @@ Master Orchestrator Agent (Chef suprême)
 │   ├── Agent Secret 1 (API Stripe/PayPal)
 │   ├── Agent Secret 2 (Tokens OAuth/MFA)
 │   └── ... (Jusqu'à 10, extensibles)
+├── Agents Go-To-Market & Delivery
+│   ├── Agent Billing Ops (Abonnements, dunning, remboursements)
+│   ├── Agent Customer Success (Onboarding, support, rétention)
+│   ├── Agent Product Growth (Activation, expérimentations)
+│   └── Agent DevOps (CI/CD, prod, observabilité)
 ├── SaaS (Architecture SaaS)
 │   ├── SaaS 1 (Front-end/Next.js)
 │   ├── SaaS 2 (Multi-tenant)
@@ -40,6 +45,7 @@ Master Orchestrator Agent (Chef suprême)
 - **Scalabilité** : Ajouter agents sans casser le système.
 - **Sécurité** : Isolation par agent (secrets séparés).
 - **Efficacité** : Parallélisme et spécialisation évitent surcharge.
+- **Exploitation réelle** : Couverture complète du cycle client (acquisition → paiement → livraison → rétention).
 
 ## Conseil Final
 Pas 100 agents identiques (redondance inutile). Mieux : 5-10 par catégorie avec spécialisations uniques (e.g., un pour crypto, un pour paiement). L'orchestrateur gère la coordination pour éviter conflits.

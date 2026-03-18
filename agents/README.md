@@ -16,6 +16,10 @@
 - `agent-monetization.agent.md` — vendre templates/produits digitaux (Gumroad, Lemon Squeezy)
 - `agent-freelance.agent.md` — acquisition clients, pitch, propositions commerciales
 - `agent-revenue.agent.md` — pilotage financier personnel, MRR, objectifs revenus
+- `agent-devops.agent.md` — CI/CD, déploiement, observabilité, fiabilité production
+- `agent-billing-ops.agent.md` — abonnements, dunning, remboursements, opérations de facturation
+- `agent-customer-success.agent.md` — onboarding, rétention, support client, adoption
+- `agent-product-growth.agent.md` — expérimentations produit, activation, loops de croissance
 
 ## saas
 - `saas-architecture.agent.md`

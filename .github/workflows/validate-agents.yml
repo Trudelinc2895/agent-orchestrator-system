@@ -1,0 +1,82 @@
+name: Validate Agents
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-agent-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate .agent.md files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          root = pathlib.Path('.')
+          files = sorted(root.glob('**/*.agent.md'))
+
+          if not files:
+              print('No .agent.md files found')
+              sys.exit(1)
+
+          errors = []
+          warnings = []
+
+          for f in files:
+              text = f.read_text(encoding='utf-8', errors='replace')
+
+              # Frontmatter minimal
+              if not text.startswith('---\n'):
+                  errors.append(f"{f}: missing YAML frontmatter start")
+                  continue
+
+              if '\n---\n' not in text[4:]:
+                  errors.append(f"{f}: missing YAML frontmatter end")
+                  continue
+
+              if not re.search(r'^name:\s+.+$', text, flags=re.MULTILINE):
+                  errors.append(f"{f}: missing frontmatter 'name'")
+
+              if not re.search(r'^description:\s+.+$', text, flags=re.MULTILINE):
+                  errors.append(f"{f}: missing frontmatter 'description'")
+
+              # Placeholder / artefacts
+              if '</content>' in text or 'Describe what this custom agent does' in text:
+                  errors.append(f"{f}: contains placeholder or artifact")
+
+              # Section contract (soft warning for progressive normalization)
+              body = text.split('\n---\n', 1)[1] if '\n---\n' in text else ''
+              if len(body.strip()) > 0:
+                  required_sections = [
+                      '## Rôle',
+                      '## Quand utiliser',
+                      '## Limites / Sécurité',
+                      '## Sortie attendue',
+                  ]
+                  missing = [s for s in required_sections if s not in body]
+                  if missing:
+                      warnings.append(f"{f}: missing sections {missing}")
+
+          if errors:
+              print('Validation errors:')
+              for e in errors:
+                  print(' -', e)
+              sys.exit(1)
+
+          if warnings:
+              print('Validation warnings (non blocking):')
+              for w in warnings:
+                  print(' -', w)
+
+          print(f'Validated {len(files)} .agent.md files successfully.')
+          PY

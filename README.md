@@ -14,12 +14,13 @@ Ce dépôt fournit une base **stable à long terme** pour :
 ## Architecture
 
 - `agents/core/` : orchestrateur + agents centraux.
-- `agents/specialized/` : agents métiers (analytics, legal, marketing, secret).
+- `agents/specialized/` : agents métiers (analytics, legal, marketing, secret, devops, billing ops, customer success, product growth).
 - `agents/saas/` : agents orientés architecture SaaS.
 - `agents/tools/` : agents opérationnels/outils.
 - `architecture/` : schéma système global.
 - `examples/` : point de départ utilisable partout.
-- `docs/` : gouvernance, opérations, changelog.
+- `docs/` : gouvernance, opérations, changelog, synthèse globale.
+- `.github/workflows/` : validation continue des agents.
 
 ## Arborescence
 
@@ -33,6 +34,8 @@ Ce dépôt fournit une base **stable à long terme** pour :
 `docs/AGENTS.md`
 `docs/OPERATIONS.md`
 `docs/CHANGELOG.md`
+`docs/SYSTEM-GLOBAL-SUMMARY.md`
+`.github/workflows/validate-agents.yml`
 
 ## Installation (VS Code / Copilot)
 
